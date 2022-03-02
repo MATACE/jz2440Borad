@@ -1,0 +1,93 @@
+/*
+ * ldr:读内存指令 ldr R0, [R1]
+ * str:写内存命令 str R0, [R1]
+ * b:跳转指令
+ * mov:移动指令 mov R0, R1
+ * 伪指令:ldr r0, = 0x100
+ * add r0, r1, #4 -> r0 = r1 + 4
+ * sub r0, r1, #4
+ * bl:跳转指令
+ * ldm:读内存写入多个寄存器
+ * stm:把多个寄存器的值写入寄存器
+ * ldmia:从栈中读取数据 先读后增
+ * stmdb:从栈中存取数据 先减后存
+ */
+
+ .text
+ .global _start
+
+_start:
+    /* 关闭看门狗 */
+    ldr r0, =0x53000000
+    ldr r1, =0
+    str r1, [r0]
+
+    /* 设置分频 */
+    /* 设置MPLL, FCKL : HCLK : PCLK = 400m : 100m : 50m */
+    /* LOCKTIME(0x4C000000) = 0xFFFFFFFF */
+    ldr r0, =0x4C000000
+    ldr r1, =0xFFFFFFFF
+    str r1, [r0]
+
+    /* CLKDIVN(0x4C000014) = 0x5, FCLK:HCLK:PCLK = 8:4:1 */
+    ldr r0, =0x4C000014
+    ldr r1, =0x5
+    str r1, [r0]
+
+    /* 设置CPU时钟来源 */
+    /* 设置CPU工作异步模式 MMU_SetAsyncBusMode */
+    mrc p15,0,r0,c1,c0,0
+    orr r0,r0,#0xc0000000
+    mcr p15,0,r0,c1,c0,0
+
+    /* 设置锁相环寄存器 */
+    /* MPLLCON(0x4C000004) = (92<<12)|(1<<4)|(1<<0) 
+     *  m = MDIV + 8 = 92 + 8 = 100
+     *  p = PDIV + 2 = 1 + 2 = 3
+     *  s = SDIV = 1
+     *  FCLK = 2*m*Fin(晶振频率)/(p*2^s) = 2 * 100 * 12 / (3*2^1) = 400M
+     */
+    ldr r0, =0x4C000004
+    ldr r1, =(92<<12)|(1<<4)|(1<<0) 
+    str r1, [r0]
+
+    /* 分辨是nor/nand启动 
+     *  nor像硬盘一样读,不可以像硬盘一样写
+     * 写0到0地址,读出来
+     * 如果值为0,表示0写入0地址,对应是ram是nand
+     * 否则是nor启动
+     */
+    
+    /* 获取零地址的值 */
+    mov r1, #0
+    /* 备份零地址的值 */
+    ldr r0, [r1]
+    /* 往零地址写零 */
+    str r1, [r1]
+    /* 读取零地址值 */
+    ldr r2, [r1]
+    /* 比较r2的值和零 */
+    cmp r1, r2
+    /* r1 == r2? 如果相等Nand启动 */
+    /* nor启动,片内地址起始地址0x40000000+4k空间 */
+    ldr sp, =0x40000000+4096
+    /* Nand启动 */
+    moveq sp, #4096
+    /* 恢复寄存器原来的值 */
+    streq r0, [r1]
+
+    /* 设置栈空间: sp栈 */
+    /* nand启动, 片内4k内存就是零地址 */
+    @ ldr sp, =4096
+    /* nor启动,片内地址起始地址0x40000000+4k空间 */
+    // ldr sp, =0x40000000+4096
+    
+    /* 调用main函数 */
+    bl main
+
+    /* 死循环执行 */
+halt:
+    b halt
+        
+
+
