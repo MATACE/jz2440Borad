@@ -1,11 +1,8 @@
 #include "s3c2440_soc.h"
+#include "led.h"
+#include "common.h"
 
-void delay(volatile unsigned int time)
-{
-    while(time--);
-}
-
-int main()
+void key_led_init(void)
 {
     /* 设置LED */
     /* 设置GPIO配置寄存器 GPF4/5/6为输出 */
@@ -17,16 +14,16 @@ int main()
 
     GPGCON &= ~(3 << 6);
 
-    unsigned int val = 0;
-
     /* 熄灭所有灯 */
     GPFDAT &= ~(3 << 4 | 3 << 5 | 3 << 6);
     GPFDAT |= (1 << 4 | 1 << 5 | 1 << 6);
+}
 
-    /* 按键控制灯的亮灭 */
-    while (1) {
-        
-        /* 按键默认上拉输入高电平 */
+void key_action(void)
+{
+    unsigned int val = 0;
+
+    /* 按键默认上拉输入高电平 */
         if (!((GPFDAT >> 0) & 1)) { //获取按键EINT0输入管脚的值
             /* 获取小灯的状态 */
             /* 消抖处理 时间大于10000小于20000间*/
@@ -40,8 +37,4 @@ int main()
                 }
             } 
         }
-    }
-
-    return 0;
-    
 }
