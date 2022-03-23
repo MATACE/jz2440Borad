@@ -1,5 +1,14 @@
 {
     "files.associations": {
-        "common.h": "c"
+        "interrupt.h": "c",
+        "led.h": "c",
+        "uart.h": "c",
+        "sdram.h": "c",
+        "s3c2440_soc.h": "c",
+        "timercount.h": "c",
+        "common.h": "c",
+        "my_printf.h": "c",
+        "norflash.h": "c",
+        "cstdio": "c"
     }
 }

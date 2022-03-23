@@ -3,7 +3,7 @@ CFLAGS := -Wall -g
 LIBS := 
 HEADS := $(patsubst %.S, %.o, $(wildcard ./src/*.S))
 OBJS := $(patsubst %.c, %.o, $(wildcard ./src/*.c))
-TARGET := uart
+TARGET := sdram
 INCLUDE := -I ./include
 
 Head:$(HEADS) $(OBJS)
