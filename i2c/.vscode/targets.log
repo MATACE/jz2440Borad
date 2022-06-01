@@ -1,0 +1,482 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Tue May 17 16:22:51 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
+# makefile (from 'Makefile', line 4)
+HEADS :=  ./src/Head.o
+# default
+.SHELLFLAGS := -c
+# environment
+VSCODE_AGENT_FOLDER = /home/matace/.vscode-server
+# environment
+VSCODE_LOG_NATIVE = false
+# makefile (from 'Makefile', line 10)
+TARGET := i2cop
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 4.1
+# makefile
+CURDIR := /home/matace/workspace/Board/jz2440/jz2440Borad/i2c
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 9)
+ARM_S :=  ./arm_s/lib1funcs.o
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"172d477fb761a9e44635eeaa6234cebe.zh-cn","_translationsConfigFile":"/home/matace/.vscode-server/data/clp/172d477fb761a9e44635eeaa6234cebe.zh-cn/tcf.json","_cacheRoot":"/home/matace/.vscode-server/data/clp/172d477fb761a9e44635eeaa6234cebe.zh-cn","_resolvedLanguagePackCoreLocation":"/home/matace/.vscode-server/data/clp/172d477fb761a9e44635eeaa6234cebe.zh-cn/da15b6fd3ef856477bf6f4fb29ba1b7af717770d","_corruptedFile":"/home/matace/.vscode-server/data/clp/172d477fb761a9e44635eeaa6234cebe.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /home/matace/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/node
+# makefile (from 'Makefile', line 2)
+CFLAGS := -Wall -g -march=armv4 -std=c99
+# environment
+socks_proxy = socks://127.0.0.1:7891/
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from 'Makefile', line 1)
+GCC := arm-linux-gcc
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+MAKELEVEL := 0
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from 'Makefile', line 8)
+OBJS :=  ./src/sdram.o  ./src/timercount.o  ./src/nandflash.o  ./src/i2c_menu.o  ./src/string_utils.o  ./src/uart.o  ./src/exception.o  ./src/touch_screen.o  ./src/common.o  ./src/my_printf.o  ./src/interrupt.o  ./src/lcd_menu.o  ./src/relocate.o  ./src/norflash.o  ./src/main.o  ./src/led.o  ./src/tslib.o  ./src/adc.o  ./src/lcd/font_char.o  ./src/lcd/geometry.o  ./src/lcd/lcd.o  ./src/lcd/s3c2440_lcd_control.o  ./src/lcd/framebuffer.o  ./src/lcd/lcd_4.3.o  ./src/lcd/font.o  ./src/lcd/lcd_control.o  ./src/i2c/i2c_2440_controler.o  ./src/i2c/at2440.o  ./src/i2c/i2c_controler.o
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = zh_CN.UTF-8
+# environment
+VSCODE_CWD = /home/matace
+# environment
+SSH_CONNECTION = 192.168.108.1 12410 192.168.108.135 22
+# environment
+PATH = /home/matace/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/bin/remote-cli:/home/matace/bin:/home/matace/.local/bin:/home/matace/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/matace/workspace/Board/jz2440/cross_compatel/arm/3.4.5/bin
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+VSCODE_LOG_STACK = false
+# environment
+LC_NUMERIC = zh_CN.UTF-8
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
+# environment
+VIRTUALENVWRAPPER_HOOK_DIR = /home/matace/.virtualenvs
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/matace/workspace/Board/jz2440/jz2440Borad/i2c
+# environment
+QT_QPA_PLATFORMTHEME = appmenu-qt5
+# environment
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-ae9ac82c-284c-49fc-80cb-eeaeca2220af.sock
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/matace
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+LOGNAME = matace
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
++F = $(notdir $+)
+# environment
+WORKON_HOME = /home/matace/.virtualenvs
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+LC_TIME = zh_CN.UTF-8
+# environment
+VIRTUALENVWRAPPER_SCRIPT = /usr/local/bin/virtualenvwrapper.sh
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 3
+# environment
+XDG_SESSION_ID = 989
+# environment
+USER = matace
+# environment
+LC_MONETARY = zh_CN.UTF-8
+# makefile
+.DEFAULT_GOAL := Head
+# makefile (from 'Makefile', line 13)
+INCLUDE := -I ./include -I ./include/lcd -I ./include/i2c
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = zh_CN.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /home/matace/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_CLIENT = 192.168.108.1 12410 22
+# environment
+MAIL = /var/mail/matace
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+BROWSER = /home/matace/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/bin/helpers/browser.sh
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# default
+MAKEFILES := 
+# environment
+VIRTUALENVWRAPPER_WORKON_CD = 1
+# automatic
+<F = $(notdir $<)
+# environment
+https_proxy = https://127.0.0.1:7890/
+# automatic
+^F = $(notdir $^)
+# environment
+LC_MEASUREMENT = zh_CN.UTF-8
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 3)
+LIBS := 
+# environment
+LC_PAPER = zh_CN.UTF-8
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+LC_IDENTIFICATION = zh_CN.UTF-8
+# default
+.RECIPEPREFIX := 
+# environment
+http_proxy = http://127.0.0.1:7890/
+# environment
+LC_ADDRESS = zh_CN.UTF-8
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# variable set hash-table stats:
+# Load=94/1024=9%, Rehash=0, Collisions=24/130=18%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+ 
+make: *** No rule to make target 'all'.  Stop.
+
+
+# . (device 2055, inode 1052324): 9 files, no impossibilities.
+# ./src (device 2055, inode 1052399): 23 files, no impossibilities.
+# ./arm_s (device 2055, inode 1052325): 3 files, no impossibilities.
+# ./src/i2c (device 2055, inode 1048760): 8 files, no impossibilities.
+# ./src/lcd (device 2055, inode 1052434): 10 files, no impossibilities.
+
+# 53 files, no impossibilities in 5 directories.
+
+# Implicit Rules
+
+%.o: %.c
+#  recipe to execute (from 'Makefile', line 23):
+	$(GCC) $(CFLAGS) $(INCLUDE) -o $@ -c $< $(LIBS)
+
+%.o: %.S
+#  recipe to execute (from 'Makefile', line 25):
+	$(GCC) $(CFLAGS) $(INCLUDE) -o $@ -c $<
+
+# 2 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+src/main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/exception.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Head: src/Head.o src/sdram.o src/timercount.o src/nandflash.o src/i2c_menu.o src/string_utils.o src/uart.o src/exception.o src/touch_screen.o src/common.o src/my_printf.o src/interrupt.o src/lcd_menu.o src/relocate.o src/norflash.o src/main.o src/led.o src/tslib.o src/adc.o src/lcd/font_char.o src/lcd/geometry.o src/lcd/lcd.o src/lcd/s3c2440_lcd_control.o src/lcd/framebuffer.o src/lcd/lcd_4.3.o src/lcd/font.o src/lcd/lcd_control.o src/i2c/i2c_2440_controler.o src/i2c/at2440.o src/i2c/i2c_controler.o arm_s/lib1funcs.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 16):
+	# Nandflash启动时前4k要负责搬移数据
+	arm-linux-ld -T sdram.lds $(HEADS) $(OBJS) $(ARM_S) libgcc.a -o $(TARGET).elf
+	# 生成bin文件
+	arm-linux-objcopy -O binary -S $(TARGET).elf $(TARGET).bin
+	# 生成反汇编文件
+	arm-linux-objdump -D $(TARGET).elf > $(TARGET).dis
+
+# Not a target:
+src/timercount.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/lcd/lcd_4.3.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+.PHONY: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/lcd/lcd_control.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/Head.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/sdram.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/lcd/lcd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-13 10:54:49.404056613
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/touch_screen.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/uart.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/nandflash.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/lcd/geometry.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/relocate.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/led.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/my_printf.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/i2c/at2440.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/string_utils.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/lcd/font.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/tslib.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/lcd/framebuffer.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/interrupt.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/lcd/font_char.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/i2c_menu.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 29):
+	rm -rf ./src/*.o  *.elf *.bin *.dis ./arm_s/*.o ./src/lcd/*.o
+
+# Not a target:
+src/lcd_menu.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+arm_s/lib1funcs.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/norflash.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/i2c/i2c_controler.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/i2c/i2c_2440_controler.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/common.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/adc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/lcd/s3c2440_lcd_control.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=38/1024=4%, Rehash=0, Collisions=4/81=5%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 91 / storage = 1096 B / avg = 12 B
+# current buf: size = 8162 B / used = 1096 B / count = 91 / avg = 12 B
+
+# strcache performance: lookups = 108 / hit rate = 15%
+# hash-table stats:
+# Load=91/8192=1%, Rehash=0, Collisions=6/108=6%
+# Finished Make data base on Tue May 17 16:22:51 2022
+
+ 

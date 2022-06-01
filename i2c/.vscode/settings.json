@@ -1,0 +1,25 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "uart.h": "c",
+        "cstdio": "c",
+        "my_printf.h": "c",
+        "string_utils.h": "c",
+        "i2c_controler.h": "c",
+        "common.h": "c",
+        "i2c_2440_controler.h": "c",
+        "s3c2440_soc.h": "c",
+        "interrupt.h": "c",
+        "at2440.h": "c",
+        "i2c_menu.h": "c",
+        "timercount.h": "c",
+        "lcd_menu.h": "c",
+        "framebuffer.h": "c",
+        "geometry.h": "c",
+        "font.h": "c",
+        "lcd.h": "c",
+        "lcd_4.3.h": "c",
+        "s3c2440_lcd_control.h": "c",
+        "lcd_control.h": "c"
+    }
+}

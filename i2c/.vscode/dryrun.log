@@ -1,0 +1,42 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/matace/workspace/Board/jz2440/jz2440Borad/i2c'
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/Head.o -c src/Head.S
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/sdram.o -c src/sdram.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/timercount.o -c src/timercount.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/nandflash.o -c src/nandflash.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/i2c_menu.o -c src/i2c_menu.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/string_utils.o -c src/string_utils.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/uart.o -c src/uart.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/exception.o -c src/exception.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/touch_screen.o -c src/touch_screen.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/common.o -c src/common.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/my_printf.o -c src/my_printf.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/interrupt.o -c src/interrupt.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/lcd_menu.o -c src/lcd_menu.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/relocate.o -c src/relocate.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/norflash.o -c src/norflash.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/main.o -c src/main.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/led.o -c src/led.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/tslib.o -c src/tslib.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/adc.o -c src/adc.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/lcd/font_char.o -c src/lcd/font_char.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/lcd/geometry.o -c src/lcd/geometry.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/lcd/lcd.o -c src/lcd/lcd.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/lcd/s3c2440_lcd_control.o -c src/lcd/s3c2440_lcd_control.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/lcd/framebuffer.o -c src/lcd/framebuffer.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/lcd/lcd_4.3.o -c src/lcd/lcd_4.3.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/lcd/font.o -c src/lcd/font.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/lcd/lcd_control.o -c src/lcd/lcd_control.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/i2c/i2c_2440_controler.o -c src/i2c/i2c_2440_controler.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/i2c/at2440.o -c src/i2c/at2440.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o src/i2c/i2c_controler.o -c src/i2c/i2c_controler.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -o arm_s/lib1funcs.o -c arm_s/lib1funcs.S
+# Nandflash启动时前4k要负责搬移数据
+ 
+arm-linux-ld -T sdram.lds  ./src/Head.o  ./src/sdram.o  ./src/timercount.o  ./src/nandflash.o  ./src/i2c_menu.o  ./src/string_utils.o  ./src/uart.o  ./src/exception.o  ./src/touch_screen.o  ./src/common.o  ./src/my_printf.o  ./src/interrupt.o  ./src/lcd_menu.o  ./src/relocate.o  ./src/norflash.o  ./src/main.o  ./src/led.o  ./src/tslib.o  ./src/adc.o  ./src/lcd/font_char.o  ./src/lcd/geometry.o  ./src/lcd/lcd.o  ./src/lcd/s3c2440_lcd_control.o  ./src/lcd/framebuffer.o  ./src/lcd/lcd_4.3.o  ./src/lcd/font.o  ./src/lcd/lcd_control.o  ./src/i2c/i2c_2440_controler.o  ./src/i2c/at2440.o  ./src/i2c/i2c_controler.o  ./arm_s/lib1funcs.o libgcc.a -o i2cop.elf
+# 生成bin文件
+arm-linux-objcopy -O binary -S i2cop.elf i2cop.bin
+# 生成反汇编文件
+arm-linux-objdump -D i2cop.elf > i2cop.dis
+make: Leaving directory '/home/matace/workspace/Board/jz2440/jz2440Borad/i2c'
+ 
