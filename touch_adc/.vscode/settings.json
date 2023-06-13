@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "touch_screen.h": "c",
+        "s3c2440_soc.h": "c",
+        "interrupt.h": "c",
+        "timercount.h": "c",
+        "led.h": "c",
+        "uart.h": "c",
+        "tslib.h": "c",
+        "framebuffer.h": "c",
+        "lcd.h": "c",
+        "lcd_4.3.h": "c",
+        "geometry.h": "c",
+        "my_printf.h": "c"
+    }
+}

@@ -1,0 +1,47 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/matace/workspace/Board/jz2440/jz2440Borad/spi'
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/Head.o -c src/Head.S
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/sdram.o -c src/sdram.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/timercount.o -c src/timercount.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/nandflash.o -c src/nandflash.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/i2c_menu.o -c src/i2c_menu.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/string_utils.o -c src/string_utils.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/uart.o -c src/uart.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/exception.o -c src/exception.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/touch_screen.o -c src/touch_screen.c 
+ 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/common.o -c src/common.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/my_printf.o -c src/my_printf.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/interrupt.o -c src/interrupt.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/lcd_menu.o -c src/lcd_menu.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/relocate.o -c src/relocate.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/norflash.o -c src/norflash.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/main.o -c src/main.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/spi_menu.o -c src/spi_menu.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/led.o -c src/led.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/tslib.o -c src/tslib.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/adc.o -c src/adc.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/lcd/geometry.o -c src/lcd/geometry.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/lcd/lcd.o -c src/lcd/lcd.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/lcd/s3c2440_lcd_control.o -c src/lcd/s3c2440_lcd_control.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/lcd/framebuffer.o -c src/lcd/framebuffer.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/lcd/lcd_4.3.o -c src/lcd/lcd_4.3.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/lcd/font.o -c src/lcd/font.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/lcd/font_char.o -c src/lcd/font_char.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/lcd/lcd_control.o -c src/lcd/lcd_control.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/i2c/i2c_2440_controler.o -c src/i2c/i2c_2440_controler.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/i2c/at2440.o -c src/i2c/at2440.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/i2c/i2c_controler.o -c src/i2c/i2c_controler.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/spi/spi_flash.o -c src/spi/spi_flash.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/spi/oled_font.o -c src/spi/oled_font.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/spi/gpio_spi.o -c src/spi/gpio_spi.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o src/spi/spi_oled.o -c src/spi/spi_oled.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -o arm_s/lib1funcs.o -c arm_s/lib1funcs.S
+# Nandflash启动时前4k要负责搬移数据
+arm-linux-ld -T sdram.lds  ./src/Head.o  ./src/sdram.o  ./src/timercount.o  ./src/nandflash.o  ./src/i2c_menu.o  ./src/string_utils.o  ./src/uart.o  ./src/exception.o  ./src/touch_screen.o  ./src/common.o  ./src/my_printf.o  ./src/interrupt.o  ./src/lcd_menu.o  ./src/relocate.o  ./src/norflash.o  ./src/main.o  ./src/spi_menu.o  ./src/led.o  ./src/tslib.o  ./src/adc.o  ./src/lcd/geometry.o  ./src/lcd/lcd.o  ./src/lcd/s3c2440_lcd_control.o  ./src/lcd/framebuffer.o  ./src/lcd/lcd_4.3.o  ./src/lcd/font.o  ./src/lcd/font_char.o  ./src/lcd/lcd_control.o  ./src/i2c/i2c_2440_controler.o  ./src/i2c/at2440.o  ./src/i2c/i2c_controler.o  ./src/spi/spi_flash.o  ./src/spi/oled_font.o  ./src/spi/gpio_spi.o  ./src/spi/spi_oled.o  ./arm_s/lib1funcs.o libgcc.a -o spiop.elf
+# 生成bin文件
+arm-linux-objcopy -O binary -S spiop.elf spiop.bin
+# 生成反汇编文件
+arm-linux-objdump -D spiop.elf > spiop.dis
+make: Leaving directory '/home/matace/workspace/Board/jz2440/jz2440Borad/spi'
+ 

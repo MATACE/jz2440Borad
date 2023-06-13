@@ -1,0 +1,13 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "gpio_spi.h": "c",
+        "spi_oled.h": "c",
+        "oled_font.h": "c",
+        "spi_menu.h": "c",
+        "spi_flash.h": "c",
+        "spi_gpio_menu.h": "c",
+        "spi_controler_reg.h": "c",
+        "spi_control_menu.h": "c"
+    }
+}

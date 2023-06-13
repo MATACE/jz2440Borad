@@ -1,0 +1,15 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "photoresistance.h": "c",
+        "sensor_menu.h": "c",
+        "string_utils.h": "c",
+        "adc.h": "c",
+        "s3c2440_soc.h": "c",
+        "my_printf.h": "c",
+        "interrupt.h": "c",
+        "cstdio": "c",
+        "timercount.h": "c",
+        "dht11.h": "c"
+    }
+}
