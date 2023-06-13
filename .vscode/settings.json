@@ -9,6 +9,7 @@
         "common.h": "c",
         "my_printf.h": "c",
         "norflash.h": "c",
-        "cstdio": "c"
+        "cstdio": "c",
+        "relocate.h": "c"
     }
 }

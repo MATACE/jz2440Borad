@@ -21,13 +21,13 @@ arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/led.o -c src/led.c 
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/tslib.o -c src/tslib.c 
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/adc.o -c src/adc.c 
+arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/lcd/font_char.o -c src/lcd/font_char.c 
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/lcd/geometry.o -c src/lcd/geometry.c 
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/lcd/lcd.o -c src/lcd/lcd.c 
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/lcd/s3c2440_lcd_control.o -c src/lcd/s3c2440_lcd_control.c 
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/lcd/framebuffer.o -c src/lcd/framebuffer.c 
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/lcd/lcd_4.3.o -c src/lcd/lcd_4.3.c 
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/lcd/font.o -c src/lcd/font.c 
-arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/lcd/font_char.o -c src/lcd/font_char.c 
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/lcd/lcd_control.o -c src/lcd/lcd_control.c 
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/i2c/i2c_2440_controler.o -c src/i2c/i2c_2440_controler.c 
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/i2c/at2440.o -c src/i2c/at2440.c 
@@ -40,11 +40,10 @@ arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/spi/spi_oled.o -c src/spi/spi_oled.c 
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/spi/spi_gpio_menu.o -c src/spi/spi_gpio_menu.c 
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/sensor/dht11.o -c src/sensor/dht11.c 
- 
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o src/sensor/photoresistance.o -c src/sensor/photoresistance.c 
 arm-linux-gcc -Wall -g -march=armv4 -std=c99 -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -o arm_s/lib1funcs.o -c arm_s/lib1funcs.S
 # Nandflash启动时前4k要负责搬移数据
-arm-linux-ld -T sdram.lds  ./src/Head.o  ./src/sdram.o  ./src/timercount.o  ./src/nandflash.o  ./src/i2c_menu.o  ./src/string_utils.o  ./src/uart.o  ./src/exception.o  ./src/touch_screen.o  ./src/common.o  ./src/my_printf.o  ./src/interrupt.o  ./src/lcd_menu.o  ./src/sensor_menu.o  ./src/relocate.o  ./src/norflash.o  ./src/main.o  ./src/spi_menu.o  ./src/led.o  ./src/tslib.o  ./src/adc.o  ./src/lcd/geometry.o  ./src/lcd/lcd.o  ./src/lcd/s3c2440_lcd_control.o  ./src/lcd/framebuffer.o  ./src/lcd/lcd_4.3.o  ./src/lcd/font.o  ./src/lcd/font_char.o  ./src/lcd/lcd_control.o  ./src/i2c/i2c_2440_controler.o  ./src/i2c/at2440.o  ./src/i2c/i2c_controler.o  ./src/spi/spi_flash.o  ./src/spi/spi_control_menu.o  ./src/spi/oled_font.o  ./src/spi/spi_controler_reg.o  ./src/spi/gpio_spi.o  ./src/spi/spi_oled.o  ./src/spi/spi_gpio_menu.o  ./src/sensor/dht11.o  ./src/sensor/photoresistance.o  ./arm_s/lib1funcs.o libgcc.a -o sensorop.elf
+arm-linux-ld -T sdram.lds  ./src/Head.o  ./src/sdram.o  ./src/timercount.o  ./src/nandflash.o  ./src/i2c_menu.o  ./src/string_utils.o  ./src/uart.o  ./src/exception.o  ./src/touch_screen.o  ./src/common.o  ./src/my_printf.o  ./src/interrupt.o  ./src/lcd_menu.o  ./src/sensor_menu.o  ./src/relocate.o  ./src/norflash.o  ./src/main.o  ./src/spi_menu.o  ./src/led.o  ./src/tslib.o  ./src/adc.o  ./src/lcd/font_char.o  ./src/lcd/geometry.o  ./src/lcd/lcd.o  ./src/lcd/s3c2440_lcd_control.o  ./src/lcd/framebuffer.o  ./src/lcd/lcd_4.3.o  ./src/lcd/font.o  ./src/lcd/lcd_control.o  ./src/i2c/i2c_2440_controler.o  ./src/i2c/at2440.o  ./src/i2c/i2c_controler.o  ./src/spi/spi_flash.o  ./src/spi/spi_control_menu.o  ./src/spi/oled_font.o  ./src/spi/spi_controler_reg.o  ./src/spi/gpio_spi.o  ./src/spi/spi_oled.o  ./src/spi/spi_gpio_menu.o  ./src/sensor/dht11.o  ./src/sensor/photoresistance.o  ./arm_s/lib1funcs.o libgcc.a -o sensorop.elf
 # 生成bin文件
 arm-linux-objcopy -O binary -S sensorop.elf sensorop.bin
 # 生成反汇编文件

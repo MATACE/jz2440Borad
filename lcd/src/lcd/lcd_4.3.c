@@ -25,7 +25,7 @@ static LCD_PARAMS lcd_4_3_params = {
         .thb = 2,
 
         /* 垂直方向 */
-        .tvf = 2,
+        .tvb = 2,
         .tvp = 10,
         .tvf = 2,
 

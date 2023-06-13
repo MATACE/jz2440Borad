@@ -1,0 +1,15 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "kernel.h": "c",
+        "setup.h": "c",
+        "*.tcc": "c",
+        "fstream": "c",
+        "istream": "c",
+        "ostream": "c",
+        "common.h": "c",
+        "string_utils.h": "c",
+        "string.h": "c",
+        "nandflash.h": "c"
+    }
+}

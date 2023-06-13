@@ -69,7 +69,7 @@ void s3c2440_lcd_init(struct S_LCD_PARAMS *lcd_params)
     /* LINEVAL Vertical y行: yres-1             bit23:bit14 */
     /* VFPD Vertical front porch:tvf-1         bit13:bit6 */
     /* VSPW Vertical sync pulse width: tvp-1   bit5:bit0 */
-    LCDCON2 = ((lcd_params->times_set.tvp-1) << 24) |\
+    LCDCON2 = ((lcd_params->times_set.tvb-1) << 24) |\
               ((lcd_params->display_set.yres-1) << 14) |\
               ((lcd_params->times_set.tvf-1) << 6) |\
               ((lcd_params->times_set.tvp-1) << 0);

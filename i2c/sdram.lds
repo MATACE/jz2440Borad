@@ -14,6 +14,9 @@ SECTIONS
     /* 指定代码段的位置 */
     .text      :
     {
+        /* 新版本gcc-ld指定 */
+        /* src/head.o (.text) */
+        /* 旧版本的gcc-ld指定位置 */        
         ./src/Head.o (.text)
         ./src/sdram.o (.text);
         ./src/interrupt.o (.text)

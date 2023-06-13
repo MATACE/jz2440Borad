@@ -1,0 +1,557 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Tue Jun 21 16:48:49 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+VIRTUALENVWRAPPER_PROJECT_FILENAME = .project
+# makefile (from 'Makefile', line 4)
+HEADS :=  ./src/Head.o
+# default
+.SHELLFLAGS := -c
+# environment
+VSCODE_AGENT_FOLDER = /home/matace/.vscode-server
+# environment
+VSCODE_LOG_NATIVE = false
+# makefile (from 'Makefile', line 13)
+TARGET := dokernel
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 4.1
+# makefile
+CURDIR := /home/matace/workspace/Board/jz2440/jz2440Borad/bootloader
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 12)
+ARM_S :=  ./arm_s/lib1funcs.o
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"fee77d9cd5726694b01a4791ef01d163.zh-cn","_translationsConfigFile":"/home/matace/.vscode-server/data/clp/fee77d9cd5726694b01a4791ef01d163.zh-cn/tcf.json","_cacheRoot":"/home/matace/.vscode-server/data/clp/fee77d9cd5726694b01a4791ef01d163.zh-cn","_resolvedLanguagePackCoreLocation":"/home/matace/.vscode-server/data/clp/fee77d9cd5726694b01a4791ef01d163.zh-cn/30d9c6cd9483b2cc586687151bcbcd635f373630","_corruptedFile":"/home/matace/.vscode-server/data/clp/fee77d9cd5726694b01a4791ef01d163.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /home/matace/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node
+# makefile (from 'Makefile', line 2)
+CFLAGS := -Wall -g -march=armv4 -std=c99
+# environment
+socks_proxy = socks://127.0.0.1:7891/
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from 'Makefile', line 1)
+GCC := arm-linux-gcc
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+MAKELEVEL := 0
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from 'Makefile', line 11)
+OBJS :=  ./src/sdram.o  ./src/timercount.o  ./src/nandflash.o  ./src/i2c_menu.o  ./src/string_utils.o  ./src/uart.o  ./src/exception.o  ./src/touch_screen.o  ./src/common.o  ./src/my_printf.o  ./src/interrupt.o  ./src/lcd_menu.o  ./src/sensor_menu.o  ./src/relocate.o  ./src/norflash.o  ./src/main.o  ./src/spi_menu.o  ./src/led.o  ./src/tslib.o  ./src/adc.o  ./src/lcd/geometry.o  ./src/lcd/lcd.o  ./src/lcd/s3c2440_lcd_control.o  ./src/lcd/framebuffer.o  ./src/lcd/lcd_4.3.o  ./src/lcd/font.o  ./src/lcd/font_char.o  ./src/lcd/lcd_control.o  ./src/i2c/i2c_2440_controler.o  ./src/i2c/at2440.o  ./src/i2c/i2c_controler.o  ./src/spi/spi_flash.o  ./src/spi/spi_control_menu.o  ./src/spi/oled_font.o  ./src/spi/spi_controler_reg.o  ./src/spi/gpio_spi.o  ./src/spi/spi_oled.o  ./src/spi/spi_gpio_menu.o  ./src/sensor/dht11.o  ./src/sensor/photoresistance.o  ./src/kernel/kernel.o
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = zh_CN.UTF-8
+# environment
+VSCODE_CWD = /home/matace
+# environment
+SSH_CONNECTION = 192.168.108.1 12477 192.168.108.135 22
+# environment
+PATH = /home/matace/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/matace/bin:/home/matace/.local/bin:/home/matace/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/matace/workspace/Board/jz2440/cross_compatel/arm/4.3.2/bin
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+VSCODE_LOG_STACK = false
+# environment
+LC_NUMERIC = zh_CN.UTF-8
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
+# environment
+VIRTUALENVWRAPPER_HOOK_DIR = /home/matace/.virtualenvs
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/matace/workspace/Board/jz2440/jz2440Borad/bootloader
+# environment
+QT_QPA_PLATFORMTHEME = appmenu-qt5
+# environment
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-784a49c4-922a-4bcf-ac67-d09981fbcef0.sock
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/matace
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+LOGNAME = matace
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
++F = $(notdir $+)
+# environment
+WORKON_HOME = /home/matace/.virtualenvs
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+LC_TIME = zh_CN.UTF-8
+# environment
+VIRTUALENVWRAPPER_SCRIPT = /usr/local/bin/virtualenvwrapper.sh
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 3
+# environment
+XDG_SESSION_ID = 5
+# environment
+USER = matace
+# environment
+LC_MONETARY = zh_CN.UTF-8
+# makefile
+.DEFAULT_GOAL := Head
+# makefile (from 'Makefile', line 19)
+INCLUDE := -I ./include -I ./include/lcd -I ./include/i2c -I ./include/spi -I ./include/sensor -I ./include/kernel
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = zh_CN.UTF-8
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_CLIENT = 192.168.108.1 12477 22
+# environment
+MAIL = /var/mail/matace
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+BROWSER = /home/matace/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# default
+MAKEFILES := 
+# environment
+VIRTUALENVWRAPPER_WORKON_CD = 1
+# automatic
+<F = $(notdir $<)
+# environment
+https_proxy = https://127.0.0.1:7890/
+# automatic
+^F = $(notdir $^)
+# environment
+LC_MEASUREMENT = zh_CN.UTF-8
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 3)
+LIBS := 
+# environment
+LC_PAPER = zh_CN.UTF-8
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+LC_IDENTIFICATION = zh_CN.UTF-8
+# default
+.RECIPEPREFIX := 
+# environment
+http_proxy = http://127.0.0.1:7890/
+# environment
+LC_ADDRESS = zh_CN.UTF-8
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# variable set hash-table stats:
+# Load=93/1024=9%, Rehash=0, Collisions=36/141=26%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# ./src/spi (device 2055, inode 918792): 16 files, no impossibilities.
+# . (device 2055, inode 918626): 12 files, no impossibilities.
+# ./src (device 2055, inode 918756): 49 files, no impossibilities.
+# ./src/sensor (device 2055, inode 918801): 6 files, no impossibilities.
+# ./arm_s (device 2055, inode 918706): 4 files, no impossibilities.
+# ./src/i2c (device 2055, inode 918757): 8 files, no impossibilities.
+# ./src/lcd (device 2055, inode 918780): 18 files, no impossibilities.
+# ./src/kernel (device 2055, inode 918809): 4 files, no impossibilities.
+
+# 117 files, no impossibilities in 8 directories.
+
+# Implicit Rules
+
+%.o: %.c
+#  recipe to execute (from 'Makefile', line 29):
+	$(GCC) $(CFLAGS) $(INCLUDE) -o $@ -c $< $(LIBS)
+
+%.o: %.S
+#  recipe to execute (from 'Makefile', line 31):
+	$(GCC) $(CFLAGS) $(INCLUDE) -o $@ -c $<
+
+# 2 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+src/main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/exception.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Head: src/Head.o src/sdram.o src/timercount.o src/nandflash.o src/i2c_menu.o src/string_utils.o src/uart.o src/exception.o src/touch_screen.o src/common.o src/my_printf.o src/interrupt.o src/lcd_menu.o src/sensor_menu.o src/relocate.o src/norflash.o src/main.o src/spi_menu.o src/led.o src/tslib.o src/adc.o src/lcd/geometry.o src/lcd/lcd.o src/lcd/s3c2440_lcd_control.o src/lcd/framebuffer.o src/lcd/lcd_4.3.o src/lcd/font.o src/lcd/font_char.o src/lcd/lcd_control.o src/i2c/i2c_2440_controler.o src/i2c/at2440.o src/i2c/i2c_controler.o src/spi/spi_flash.o src/spi/spi_control_menu.o src/spi/oled_font.o src/spi/spi_controler_reg.o src/spi/gpio_spi.o src/spi/spi_oled.o src/spi/spi_gpio_menu.o src/sensor/dht11.o src/sensor/photoresistance.o src/kernel/kernel.o arm_s/lib1funcs.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 22):
+	# Nandflash启动时前4k要负责搬移数据
+	arm-linux-ld -T sdram.lds $(HEADS) $(OBJS) $(ARM_S) libgcc.a -o $(TARGET).elf
+	# 生成bin文件
+	arm-linux-objcopy -O binary -S $(TARGET).elf $(TARGET).bin
+	# 生成反汇编文件
+	arm-linux-objdump -D $(TARGET).elf > $(TARGET).dis
+
+# Not a target:
+src/timercount.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/spi/spi_flash.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/lcd/lcd_4.3.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ 
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+.PHONY: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/lcd/lcd_control.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/Head.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/spi/spi_control_menu.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/sdram.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/spi/spi_gpio_menu.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/lcd/lcd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-13 17:26:10.986976269
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/touch_screen.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/uart.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/nandflash.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/spi/spi_oled.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ 
+src/lcd/geometry.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/sensor/dht11.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/relocate.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/led.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/my_printf.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/i2c/at2440.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/string_utils.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/lcd/font.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/tslib.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/lcd/framebuffer.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/spi/oled_font.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/sensor_menu.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/interrupt.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/sensor/photoresistance.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ 
+src/lcd/font_char.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/i2c_menu.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/spi/spi_controler_reg.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 35):
+	rm -rf ./src/*.o  *.elf *.bin *.dis ./arm_s/*.o ./src/lcd/*.o ./src/spi/*.o ./src/sensor/*.o ./src/kernel/*.o
+
+# Not a target:
+src/lcd_menu.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+arm_s/lib1funcs.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/norflash.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/i2c/i2c_controler.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/i2c/i2c_2440_controler.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/spi/gpio_spi.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/spi_menu.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/kernel/kernel.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/common.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/adc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/lcd/s3c2440_lcd_control.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=50/1024=5%, Rehash=0, Collisions=5/105=5%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 164 / storage = 2070 B / avg = 12 B
+# current buf: size = 8162 B / used = 2070 B / count = 164 / avg = 12 B
+
+# strcache performance: lookups = 187 / hit rate = 12%
+# hash-table stats:
+# Load=164/8192=2%, Rehash=0, Collisions=11/187=6%
+# Finished Make data base on Tue Jun 21 16:48:49 2022
+
+ 

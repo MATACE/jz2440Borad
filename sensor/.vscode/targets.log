@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun  1 15:43:18 2022
+# Make data base, printed on Thu Jun  9 21:20:38 2022
 
 # Variables
 
@@ -63,7 +63,7 @@ XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # makefile (from 'Makefile', line 10)
-OBJS :=  ./src/sdram.o  ./src/timercount.o  ./src/nandflash.o  ./src/i2c_menu.o  ./src/string_utils.o  ./src/uart.o  ./src/exception.o  ./src/touch_screen.o  ./src/common.o  ./src/my_printf.o  ./src/interrupt.o  ./src/lcd_menu.o  ./src/sensor_menu.o  ./src/relocate.o  ./src/norflash.o  ./src/main.o  ./src/spi_menu.o  ./src/led.o  ./src/tslib.o  ./src/adc.o  ./src/lcd/geometry.o  ./src/lcd/lcd.o  ./src/lcd/s3c2440_lcd_control.o  ./src/lcd/framebuffer.o  ./src/lcd/lcd_4.3.o  ./src/lcd/font.o  ./src/lcd/font_char.o  ./src/lcd/lcd_control.o  ./src/i2c/i2c_2440_controler.o  ./src/i2c/at2440.o  ./src/i2c/i2c_controler.o  ./src/spi/spi_flash.o  ./src/spi/spi_control_menu.o  ./src/spi/oled_font.o  ./src/spi/spi_controler_reg.o  ./src/spi/gpio_spi.o  ./src/spi/spi_oled.o  ./src/spi/spi_gpio_menu.o  ./src/sensor/dht11.o  ./src/sensor/photoresistance.o
+OBJS :=  ./src/sdram.o  ./src/timercount.o  ./src/nandflash.o  ./src/i2c_menu.o  ./src/string_utils.o  ./src/uart.o  ./src/exception.o  ./src/touch_screen.o  ./src/common.o  ./src/my_printf.o  ./src/interrupt.o  ./src/lcd_menu.o  ./src/sensor_menu.o  ./src/relocate.o  ./src/norflash.o  ./src/main.o  ./src/spi_menu.o  ./src/led.o  ./src/tslib.o  ./src/adc.o  ./src/lcd/font_char.o  ./src/lcd/geometry.o  ./src/lcd/lcd.o  ./src/lcd/s3c2440_lcd_control.o  ./src/lcd/framebuffer.o  ./src/lcd/lcd_4.3.o  ./src/lcd/font.o  ./src/lcd/lcd_control.o  ./src/i2c/i2c_2440_controler.o  ./src/i2c/at2440.o  ./src/i2c/i2c_controler.o  ./src/spi/spi_flash.o  ./src/spi/spi_control_menu.o  ./src/spi/oled_font.o  ./src/spi/spi_controler_reg.o  ./src/spi/gpio_spi.o  ./src/spi/spi_oled.o  ./src/spi/spi_gpio_menu.o  ./src/sensor/dht11.o  ./src/sensor/photoresistance.o
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -71,7 +71,7 @@ LC_NAME = zh_CN.UTF-8
 # environment
 VSCODE_CWD = /home/matace
 # environment
-SSH_CONNECTION = 192.168.108.1 8103 192.168.108.135 22
+SSH_CONNECTION = 192.168.108.1 5076 192.168.108.135 22
 # environment
 PATH = /home/matace/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/home/matace/bin:/home/matace/.local/bin:/home/matace/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/matace/workspace/Board/jz2440/cross_compatel/arm/3.4.5/bin
 # environment
@@ -97,7 +97,7 @@ PWD = /home/matace/workspace/Board/jz2440/jz2440Borad/sensor
 # environment
 QT_QPA_PLATFORMTHEME = appmenu-qt5
 # environment
-VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-1505b59b-c6c8-4b31-bb61-f8727a260eaf.sock
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-3a7e0988-8e66-4743-b3b7-478770a1d8ac.sock
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -127,7 +127,7 @@ MAKECMDGOALS := all
 # environment
 SHLVL = 3
 # environment
-XDG_SESSION_ID = 1
+XDG_SESSION_ID = 30
 # environment
 USER = matace
 # environment
@@ -151,7 +151,7 @@ MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_CLIENT = 192.168.108.1 8103 22
+SSH_CLIENT = 192.168.108.1 5076 22
 # environment
 MAIL = /var/mail/matace
 # automatic
@@ -207,15 +207,15 @@ VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 
 # Directories
 
-# ./src/spi (device 2055, inode 1049090): 16 files, no impossibilities.
-# . (device 2055, inode 1048606): 12 files, no impossibilities.
-# ./src (device 2055, inode 1049030): 48 files, no impossibilities.
-# ./src/sensor (device 2055, inode 1049208): 6 files, no impossibilities.
-# ./arm_s (device 2055, inode 1048607): 4 files, no impossibilities.
+# ./src/spi (device 2055, inode 1049090): 9 files, no impossibilities.
+# . (device 2055, inode 1048606): 9 files, no impossibilities.
+# ./src (device 2055, inode 1049030): 27 files, no impossibilities.
+# ./src/sensor (device 2055, inode 1049208): 4 files, no impossibilities.
+# ./arm_s (device 2055, inode 1048607): 3 files, no impossibilities.
 # ./src/i2c (device 2055, inode 1049055): 8 files, no impossibilities.
-# ./src/lcd (device 2055, inode 1049078): 18 files, no impossibilities.
+# ./src/lcd (device 2055, inode 1049078): 10 files, no impossibilities.
 
-# 112 files, no impossibilities in 7 directories.
+# 70 files, no impossibilities in 7 directories.
 
 # Implicit Rules
 
@@ -243,7 +243,7 @@ src/exception.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-Head: src/Head.o src/sdram.o src/timercount.o src/nandflash.o src/i2c_menu.o src/string_utils.o src/uart.o src/exception.o src/touch_screen.o src/common.o src/my_printf.o src/interrupt.o src/lcd_menu.o src/sensor_menu.o src/relocate.o src/norflash.o src/main.o src/spi_menu.o src/led.o src/tslib.o src/adc.o src/lcd/geometry.o src/lcd/lcd.o src/lcd/s3c2440_lcd_control.o src/lcd/framebuffer.o src/lcd/lcd_4.3.o src/lcd/font.o src/lcd/font_char.o src/lcd/lcd_control.o src/i2c/i2c_2440_controler.o src/i2c/at2440.o src/i2c/i2c_controler.o src/spi/spi_flash.o src/spi/spi_control_menu.o src/spi/oled_font.o src/spi/spi_controler_reg.o src/spi/gpio_spi.o src/spi/spi_oled.o src/spi/spi_gpio_menu.o src/sensor/dht11.o src/sensor/photoresistance.o arm_s/lib1funcs.o
+Head: src/Head.o src/sdram.o src/timercount.o src/nandflash.o src/i2c_menu.o src/string_utils.o src/uart.o src/exception.o src/touch_screen.o src/common.o src/my_printf.o src/interrupt.o src/lcd_menu.o src/sensor_menu.o src/relocate.o src/norflash.o src/main.o src/spi_menu.o src/led.o src/tslib.o src/adc.o src/lcd/font_char.o src/lcd/geometry.o src/lcd/lcd.o src/lcd/s3c2440_lcd_control.o src/lcd/framebuffer.o src/lcd/lcd_4.3.o src/lcd/font.o src/lcd/lcd_control.o src/i2c/i2c_2440_controler.o src/i2c/at2440.o src/i2c/i2c_controler.o src/spi/spi_flash.o src/spi/spi_control_menu.o src/spi/oled_font.o src/spi/spi_controler_reg.o src/spi/gpio_spi.o src/spi/spi_oled.o src/spi/spi_gpio_menu.o src/sensor/dht11.o src/sensor/photoresistance.o arm_s/lib1funcs.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -537,12 +537,12 @@ src/lcd/s3c2440_lcd_control.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 159 / storage = 2012 B / avg = 12 B
-# current buf: size = 8162 B / used = 2012 B / count = 159 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 117 / storage = 1520 B / avg = 12 B
+# current buf: size = 8162 B / used = 1520 B / count = 117 / avg = 12 B
 
-# strcache performance: lookups = 180 / hit rate = 11%
+# strcache performance: lookups = 138 / hit rate = 15%
 # hash-table stats:
-# Load=159/8192=2%, Rehash=0, Collisions=10/180=6%
-# Finished Make data base on Wed Jun  1 15:43:18 2022
+# Load=117/8192=1%, Rehash=0, Collisions=8/138=6%
+# Finished Make data base on Thu Jun  9 21:20:38 2022
 
  
