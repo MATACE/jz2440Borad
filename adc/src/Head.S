@@ -205,7 +205,7 @@ sdram:
     bl print1
 
 und_code:
-    .word 0xdeadc0de
+    .word 0xeeadc0de
     bl print2
 
     /* 进入swi异常处理 */
